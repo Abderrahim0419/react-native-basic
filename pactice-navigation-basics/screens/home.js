@@ -38,7 +38,6 @@ const HomeScreen = ({ navigation }) => {
             <Formik
               initialValues={{id:'',name:''}}
               onSubmit={(values)=>{
-
               }}
             >
               {(props)=>(
@@ -56,7 +55,6 @@ const HomeScreen = ({ navigation }) => {
                 </View>
 
               )}
-               
             </Formik>
             <Pressable
               style={[styles.button, styles.buttonClose]}
