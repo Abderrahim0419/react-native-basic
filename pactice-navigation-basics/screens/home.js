@@ -4,7 +4,7 @@ import { StyleSheet,View, TextInput,Text, Button,FlatList,TouchableOpacity,Image
 import { globalStyle } from '../styles/style';
 import { Formik } from 'formik';
 const HomeScreen = ({ navigation }) => {
-    const [modalVisible,setModalVisible]= useState(true);
+    const [modalVisible,setModalVisible]= useState(false);
     const [user,setUser]=useState([
         {id:1,name:'hamid'},
         {id:2,name:'hamid2'},
