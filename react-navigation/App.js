@@ -37,9 +37,6 @@ export default function App() {
           <Stack.Screen name='Login' component={Login} options={{title:'Login',animationEnabled:false,headerShown: false}} />
           <Stack.Screen name='Slider' component={Slider} options={{title:'Slide',animationEnabled:false,headerShown: false}} />
           <Stack.Screen name='Addpost' component={Addpost} options={{title:'Add post',animationEnabled:false}} />
-
-
-
       </Stack.Navigator>
   );
 
