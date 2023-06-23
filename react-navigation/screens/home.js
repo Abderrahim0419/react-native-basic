@@ -6,6 +6,7 @@ import { ScrollView } from "react-native-gesture-handler";
 function Home ({navigation}){
     const [post,setPost]= useState([]);
    useEffect(() => {
+    const interval = setInterval(() => {
         axios.get('http://10.0.2.2:8080/api/getPost')
           .then(response => {
             /*console.log(response.data);*/
@@ -14,6 +15,8 @@ function Home ({navigation}){
           .catch(error => {
             console.error(error);
           });
+    },1000)
+    return () => clearInterval(interval);
       }, []);
     
     return (
